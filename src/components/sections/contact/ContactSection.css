@@ -1,0 +1,301 @@
+/* CONTACT FORM */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start
+    }
+
+    .contact-info h3 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 14px
+    }
+
+    .contact-info>p {
+      color: var(--g500);
+      font-size: .95rem;
+      line-height: 1.7;
+      margin-bottom: 28px
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 18px
+    }
+
+    .contact-detail-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--crimson-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0
+    }
+
+    .contact-detail-icon svg {
+      width: 18px;
+      height: 18px;
+      color: var(--crimson)
+    }
+
+    .contact-detail-text strong {
+      display: block;
+      font-size: .85rem;
+      color: var(--navy);
+      margin-bottom: 2px
+    }
+
+    .contact-detail-text span {
+      font-size: .82rem;
+      color: var(--g500)
+    }
+
+    .contact-form {
+      background: var(--white);
+      border: 1px solid var(--g200);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .06)
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 14px
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px
+    }
+
+    .form-group.full {
+      grid-column: 1/-1
+    }
+
+    .form-label {
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--navy)
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--g200);
+      border-radius: 6px;
+      font-size: .88rem;
+      font-family: var(--sans);
+      color: var(--g800);
+      background: var(--off-white);
+      transition: border-color .2s;
+      outline: none
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--crimson);
+      background: var(--white)
+    }
+
+    .form-textarea {
+      min-height: 100px;
+      resize: vertical
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 13px;
+      background: var(--crimson);
+      color: var(--white);
+      border: none;
+      border-radius: 6px;
+      font-size: .9rem;
+      font-weight: 600;
+      font-family: var(--sans);
+      cursor: pointer;
+      transition: all .2s;
+      margin-top: 6px
+    }
+
+    .form-submit:hover {
+      background: var(--crimson-deep);
+      transform: translateY(-1px)
+    }
+
+/* About SchemaX */
+    .schemax-section {
+      background: var(--white);
+      color: var(--g800);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid var(--g200)
+    }
+
+    .schemax-section::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -15%;
+      width: 40%;
+      height: 160%;
+      background: radial-gradient(ellipse, rgba(26, 39, 68, .03), transparent 70%)
+    }
+
+    .schemax-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center
+    }
+
+    .schemax-content h2 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--navy)
+    }
+
+    .schemax-content>p {
+      color: var(--g500);
+      font-size: .95rem;
+      line-height: 1.75;
+      margin-bottom: 24px
+    }
+
+    .schemax-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px
+    }
+
+    .schemax-stat {
+      background: var(--off-white);
+      border: 1px solid var(--g200);
+      border-radius: 10px;
+      padding: 20px 16px;
+      text-align: center
+    }
+
+    .schemax-stat b {
+      display: block;
+      font-family: var(--mono);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--blue-accent);
+      margin-bottom: 4px
+    }
+
+    .schemax-stat span {
+      font-size: .78rem;
+      color: var(--g500)
+    }
+
+    .schemax-values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    .schemax-value {
+      background: var(--off-white);
+      border: 1px solid var(--g200);
+      border-radius: 8px;
+      padding: 16px
+    }
+
+    .schemax-value h4 {
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px
+    }
+
+    .schemax-value p {
+      font-size: .8rem;
+      color: var(--g500);
+      line-height: 1.5
+    }
+
+    .schemax-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--crimson);
+      font-weight: 600;
+      font-size: .9rem;
+      text-decoration: none;
+      margin-top: 20px;
+      padding: 10px 24px;
+      border: 1px solid var(--crimson);
+      border-radius: 6px;
+      transition: all .2s
+    }
+
+    .schemax-link:hover {
+      background: var(--crimson-pale)
+    }
+
+/* CTA */
+    .cta {
+      background: var(--crimson);
+      padding: 70px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden
+    }
+
+    .cta h2 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 14px
+    }
+
+    .cta p {
+      font-size: 1.02rem;
+      color: rgba(255, 255, 255, .75);
+      margin-bottom: 32px
+    }
+
+    .btn-gold {
+      background: var(--gold-bright);
+      color: var(--navy);
+      font-weight: 700;
+      padding: 14px 36px;
+      box-shadow: 0 4px 14px rgba(212, 150, 28, .35)
+    }
+
+    .btn-gold:hover {
+      background: var(--gold);
+      transform: translateY(-2px)
+    }
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .schemax-grid {
+    grid-template-columns: 1fr;
+  }
+}

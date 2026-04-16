@@ -1,0 +1,21 @@
+/* GOV STRIP */
+    .gov-strip {
+      background: var(--g900);
+      color: rgba(255, 255, 255, .75);
+      font-size: .72rem;
+      padding: 5px 0
+    }
+
+    .gov-strip .container {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .gov-flag {
+      width: 20px;
+      height: 13px;
+      background: linear-gradient(to bottom, #FF9933 33%, #FFF 33%, #FFF 66%, #138808 66%);
+      border-radius: 2px;
+      flex-shrink: 0
+    }

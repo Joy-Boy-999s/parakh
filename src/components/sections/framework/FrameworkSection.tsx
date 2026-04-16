@@ -1,4 +1,6 @@
 import type { CSSProperties } from "react";
+import "../SectionBase.css";
+import "./FrameworkSection.css";
 
 function CheckIcon() {
   return (

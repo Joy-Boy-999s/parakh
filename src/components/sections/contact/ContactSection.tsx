@@ -1,3 +1,6 @@
+import "../SectionBase.css";
+import "./ContactSection.css";
+
 export function ContactSection() {
   return (
     <>

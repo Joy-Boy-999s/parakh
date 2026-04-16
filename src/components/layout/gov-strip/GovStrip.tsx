@@ -1,3 +1,5 @@
+import "./GovStrip.css";
+
 export function GovStrip() {
   return (
     <div className="gov-strip">

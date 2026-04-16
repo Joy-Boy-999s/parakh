@@ -1,3 +1,5 @@
+import "./TrustBar.css";
+
 export function TrustBar() {
   return (
     <div className="trust">

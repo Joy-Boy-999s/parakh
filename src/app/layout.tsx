@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
-import "./parakh.css";
 
 const dmSans = DM_Sans({
   variable: "--font-sans",

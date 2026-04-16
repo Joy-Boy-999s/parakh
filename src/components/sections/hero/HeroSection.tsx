@@ -1,3 +1,5 @@
+import "./HeroSection.css";
+
 export function HeroSection() {
   return (
     <section className="hero" id="top">

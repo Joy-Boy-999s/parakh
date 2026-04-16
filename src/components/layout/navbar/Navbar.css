@@ -1,0 +1,151 @@
+/* NAV */
+    .nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--g200);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: box-shadow .3s
+    }
+
+    .nav.scrolled {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .08)
+    }
+
+    .nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: baseline;
+      gap: 1px;
+      font-size: 1.45rem;
+      font-weight: 800;
+      font-family: var(--sans)
+    }
+
+    .brand-mark .c1 {
+      color: #C62828
+    }
+
+    .brand-mark .c2 {
+      color: #E87B35
+    }
+
+    .brand-mark .c3 {
+      color: #1D7A4A
+    }
+
+    .brand-mark .c4 {
+      color: #2E6BC6
+    }
+
+    .brand-mark .c5 {
+      color: #5C3D8F
+    }
+
+    .brand-mark .c6 {
+      color: #C62828
+    }
+
+    .brand-mark .arrow {
+      color: var(--gold-bright);
+      font-size: 1rem;
+      margin-left: -1px;
+      position: relative;
+      top: -3px
+    }
+
+    .brand-sep {
+      width: 1px;
+      height: 28px;
+      background: var(--g300)
+    }
+
+    .brand-label {
+      line-height: 1.15
+    }
+
+    .brand-label-main {
+      font-size: .88rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: .05em
+    }
+
+    .brand-label-sub {
+      font-size: .62rem;
+      color: var(--g500);
+      font-weight: 500
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--g600);
+      font-size: .85rem;
+      font-weight: 500;
+      transition: color .2s
+    }
+
+    .nav-links a:hover {
+      color: var(--crimson)
+    }
+
+    .nav-cta {
+      background: var(--crimson) !important;
+      color: var(--white) !important;
+      padding: 9px 22px !important;
+      border-radius: 6px !important;
+      font-weight: 600 !important;
+      transition: all .2s !important;
+      font-size: .84rem !important
+    }
+
+    .nav-cta:hover {
+      background: var(--crimson-deep) !important;
+      transform: translateY(-1px)
+    }
+
+    .mobile-menu {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px
+    }
+
+    .mobile-menu span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--g800);
+      margin: 5px 0
+    }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

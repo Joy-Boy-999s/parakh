@@ -1,3 +1,6 @@
+import "../SectionBase.css";
+import "./ProblemSection.css";
+
 export function ProblemSection() {
   return (
     <section className="section" id="problem">

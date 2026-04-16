@@ -1,0 +1,99 @@
+/* PROBLEM */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px
+    }
+
+    .problem-card {
+      padding: 32px 24px;
+      border-radius: 10px;
+      border: 1px solid var(--g200);
+      background: var(--white);
+      position: relative;
+      overflow: hidden
+    }
+
+    .problem-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px
+    }
+
+    .problem-card:nth-child(1)::before {
+      background: var(--crimson)
+    }
+
+    .problem-card:nth-child(2)::before {
+      background: var(--gold-bright)
+    }
+
+    .problem-card:nth-child(3)::before {
+      background: var(--blue-accent)
+    }
+
+    .p-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px
+    }
+
+    .p-icon svg {
+      width: 22px;
+      height: 22px
+    }
+
+    .problem-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px
+    }
+
+    .problem-card p {
+      font-size: .88rem;
+      color: var(--g500);
+      line-height: 1.7
+    }
+
+    .solution-note {
+      margin-top: 40px;
+      background: var(--green-pale);
+      border: 1px solid rgba(29, 122, 74, .15);
+      border-radius: 10px;
+      padding: 24px 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px
+    }
+
+    .solution-note svg {
+      width: 22px;
+      height: 22px;
+      color: var(--green);
+      flex-shrink: 0;
+      margin-top: 2px
+    }
+
+    .solution-note p {
+      font-size: .92rem;
+      color: var(--g700);
+      line-height: 1.7
+    }
+
+    .solution-note strong {
+      color: var(--green)
+    }
+
+@media (max-width: 768px) {
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+}
