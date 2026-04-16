@@ -1,0 +1,41 @@
+.section {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.container {
+  width: min(1140px, 92vw);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--gray-200);
+  border-top: 4px solid var(--crimson);
+  border-radius: 12px;
+  padding: 1.2rem;
+  background: #fff;
+}
+
+.card h3 {
+  color: var(--navy);
+  font-size: 1rem;
+  margin-bottom: 0.55rem;
+}
+
+.card p {
+  color: var(--gray-600);
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,1 @@
+export { GovStrip } from "./GovStrip";
